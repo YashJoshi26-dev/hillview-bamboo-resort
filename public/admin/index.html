@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#0E3522">
+<title>Admin — Hill View Bamboo Resort</title>
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<section id="login" class="login" hidden>
+  <form id="login-form" class="card login-card">
+    <h1>Hill View Admin</h1>
+    <p class="muted">Sign in to manage rates, photos and guest links.</p>
+    <label for="pw">Password</label>
+    <div class="pw-wrap">
+      <input id="pw" type="password" autocomplete="current-password" required>
+      <button type="button" id="pw-show" class="link" aria-label="Show password">Show</button>
+    </div>
+    <p id="login-err" class="err" role="alert"></p>
+    <button class="btn big" type="submit">Sign in</button>
+  </form>
+</section>
+
+<div id="app" hidden>
+  <header class="top">
+    <strong class="brand">Hill View Admin</strong>
+    <span class="spacer"></span>
+    <a class="btn ghost sm" href="/" target="_blank" rel="noopener">View website</a>
+    <button id="logout" class="btn ghost sm" type="button">Sign out</button>
+  </header>
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-tab="prices" aria-selected="true"><span>₹</span>Rates</button>
+    <button role="tab" data-tab="pictures" aria-selected="false"><span>🖼</span>Photos</button>
+    <button role="tab" data-tab="links" aria-selected="false"><span>🔗</span>Guest links</button>
+  </nav>
+
+  <main>
+    <section data-panel="prices">
+      <div class="card">
+        <h2>Rates</h2>
+        <p class="muted">Update the amounts below, then select <b>Save changes</b>. The website updates immediately.</p>
+        <div class="price-grid">
+          <div class="price-card"><label for="p-one">One cottage<small>per night</small></label><div class="money"><span>₹</span><input id="p-one" type="number" inputmode="numeric" min="100" step="1"></div><div class="shown" data-shown="one"></div></div>
+          <div class="price-card"><label for="p-three">All three cottages<small>per night</small></label><div class="money"><span>₹</span><input id="p-three" type="number" inputmode="numeric" min="100" step="1"></div><div class="shown" data-shown="three"></div></div>
+          <div class="price-card"><label for="p-whole">Whole property<small>per day</small></label><div class="money"><span>₹</span><input id="p-whole" type="number" inputmode="numeric" min="100" step="1"></div><div class="shown" data-shown="whole"></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section data-panel="pictures" hidden>
+      <div class="card">
+        <h2>Main photos</h2>
+        <p class="muted">Select <b>Replace</b> on any photo to upload a new one. Large phone photos are fine; they are resized automatically.</p>
+        <div id="slots" class="slots"></div>
+      </div>
+      <div class="card">
+        <div class="row-between">
+          <div><h2>Gallery</h2><p class="muted">Add, remove or reorder photos using the arrows.</p></div>
+          <label class="btn" for="gallery-add">+ Add photos</label>
+          <input id="gallery-add" type="file" accept="image/jpeg,image/png,image/webp" multiple hidden>
+        </div>
+        <div id="drop" class="drop" tabindex="0">Drag photos here, or use “Add photos”</div>
+        <ul id="gallery" class="gallery"></ul>
+      </div>
+    </section>
+
+    <section data-panel="links" hidden>
+      <div class="card">
+        <h2>Create a guest link</h2>
+        <p class="muted">The guest’s name appears on the website. You can optionally set special rates visible only through this link.</p>
+        <form id="offer-form" class="offer-form">
+          <div class="field"><label for="o-name">Guest name *</label><input id="o-name" maxlength="60" required placeholder="e.g. Rahul Sharma"></div>
+          <div class="field"><label for="o-msg">Message <small>(optional)</small></label><input id="o-msg" maxlength="200" placeholder="e.g. A special weekend rate for your family"></div>
+          <p class="hint">Special rates (leave blank to use standard rates):</p>
+          <div class="grid-3">
+            <div class="field"><label for="o-one">One cottage</label><input id="o-one" type="number" inputmode="numeric" min="100" step="1"></div>
+            <div class="field"><label for="o-three">All three</label><input id="o-three" type="number" inputmode="numeric" min="100" step="1"></div>
+            <div class="field"><label for="o-whole">Whole property</label><input id="o-whole" type="number" inputmode="numeric" min="100" step="1"></div>
+          </div>
+          <div class="field narrow"><label for="o-exp">Valid until <small>(optional)</small></label><input id="o-exp" type="date"></div>
+          <button class="btn big" type="submit">Create link</button>
+        </form>
+      </div>
+      <div class="card">
+        <h2>Your guest links</h2>
+        <div id="offers" class="offers"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="savebar" class="savebar" hidden>
+    <span>You have unsaved changes</span>
+    <button id="discard" class="btn ghost sm" type="button">Discard</button>
+    <button id="save" class="btn sm" type="button">Save changes</button>
+  </div>
+</div>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="/admin/admin.js"></script>
+</body>
+</html>

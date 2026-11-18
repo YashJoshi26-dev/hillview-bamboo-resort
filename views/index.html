@@ -84,6 +84,11 @@ p{margin:0 0 1.1em}
 .nav-toggle span::before{position:absolute;top:-6px}
 .nav-toggle span::after{position:absolute;top:6px}
 
+/* ============ personal offer bar ============ */
+.offer-bar{background:var(--green-deep);color:#fff;text-align:center;padding:12px var(--pad);font-size:.98rem}
+.offer-bar b{color:var(--gold-soft);font-weight:700}
+.offer-bar[hidden]{display:none}
+
 /* ============ hero ============ */
 .hero{position:relative;min-height:min(92vh,820px);display:flex;align-items:flex-end;overflow:hidden;background:var(--green-deep)}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92}
@@ -272,18 +277,19 @@ footer a:hover{color:var(--gold-soft)}
     </nav>
   </div>
 </header>
+<div class="offer-bar" id="offer-bar" hidden></div>
 
 <!-- ===== hero ===== -->
 <main id="top">
 <section class="hero" style="padding:0">
-  <img class="hero-img" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193980/hillview1.png" alt="Bamboo cottages at Hill View Bamboo Resort at dusk">
+  <img class="hero-img" data-img="hero" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193980/hillview1.png" alt="Bamboo cottages at Hill View Bamboo Resort at dusk">
   <div class="hero-in">
     <h1 class="reveal">Wake up in a bamboo cottage <em>on the hill.</em></h1>
     <p class="reveal d1">Three cottages, a pool, a bonfire pit and a lawn that is yours for the evening. Close enough for a weekend, far enough to hear nothing.</p>
     <div class="hero-cta reveal d2">
       <a class="btn light" href="#book">Check availability</a>
       <a class="btn ghost" href="#cottages">See the cottages</a>
-      <span class="rate-chip"><b>₹2,499</b> per cottage, per night</span>
+      <span class="rate-chip"><b data-price="one">₹2,499</b> per cottage, per night</span>
     </div>
   </div>
 </section>
@@ -316,8 +322,8 @@ footer a:hover{color:var(--gold-soft)}
       </ul>
     </div>
     <div class="stay-figs">
-      <img loading="lazy" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193835/Golden-Hour_Garden_Cabin_Retreat.png" alt="Cottage verandah in golden evening light">
-      <img loading="lazy" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193932/evening1.png" alt="Resort grounds lit up in the evening">
+      <img loading="lazy" data-img="stayA" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193835/Golden-Hour_Garden_Cabin_Retreat.png" alt="Cottage verandah in golden evening light">
+      <img loading="lazy" data-img="stayB" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193932/evening1.png" alt="Resort grounds lit up in the evening">
     </div>
   </div>
 </section>
@@ -333,30 +339,30 @@ footer a:hover{color:var(--gold-soft)}
 
     <div class="rate-list">
       <article class="rate-row">
-        <img loading="lazy" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193959/room1.png" alt="Inside a bamboo cottage">
+        <img loading="lazy" data-img="roomOne" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193959/room1.png" alt="Inside a bamboo cottage">
         <div>
           <h3>One bamboo cottage</h3>
           <p>A double bed, attached bath, and a verandah that looks down the hill. Right for a couple or a small family.</p>
         </div>
-        <div class="price"><b>₹2,499</b><span>per night</span></div>
+        <div class="price"><b data-price="one">₹2,499</b><span>per night</span></div>
       </article>
 
       <article class="rate-row">
-        <img loading="lazy" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193977/03.png" alt="All three cottages along the slope">
+        <img loading="lazy" data-img="roomThree" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193977/03.png" alt="All three cottages along the slope">
         <div>
           <h3>All three cottages</h3>
           <p>The full row of cottages for one group — about four to six rooms' worth of people, with the pool and lawn to yourselves.</p>
         </div>
-        <div class="price"><b>₹10,500</b><span>per night</span></div>
+        <div class="price"><b data-price="three">₹10,500</b><span>per night</span></div>
       </article>
 
       <article class="rate-row">
-        <img loading="lazy" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193976/07.png" alt="The whole property including the party hall">
+        <img loading="lazy" data-img="roomWhole" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193976/07.png" alt="The whole property including the party hall">
         <div>
           <h3>The whole property</h3>
           <p>Three cottages, the party hall cottage, the lawn, the pool and the kitchen — booked out for your day and night.</p>
         </div>
-        <div class="price"><b>₹13,000</b><span>per day</span></div>
+        <div class="price"><b data-price="whole">₹13,000</b><span>per day</span></div>
       </article>
     </div>
     <p class="note">Check-in 1:00 PM · Check-out 11:00 AM. Extra mattress and meal plans on request — tell us your numbers on WhatsApp and we will send the full costing.</p>
@@ -381,7 +387,7 @@ footer a:hover{color:var(--gold-soft)}
       </ul>
       <a class="btn light" style="margin-top:28px" href="#book">Plan an event</a>
     </div>
-    <img loading="lazy" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193952/ChatGPT_Image_Sep_30_2026_04_38_53_PM.png" alt="Party hall and lawn set up for an evening gathering">
+    <img loading="lazy" data-img="party" src="https://res.cloudinary.com/nln7zmmg/image/upload/v1791193952/ChatGPT_Image_Sep_30_2026_04_38_53_PM.png" alt="Party hall and lawn set up for an evening gathering">
   </div>
 </section>
 
@@ -581,7 +587,7 @@ footer a:hover{color:var(--gold-soft)}
   document.getElementById("send").addEventListener("click", function(){
     var lines = [
       "Hi Hill View Bamboo Resort, I'd like to check availability.",
-      "Name: " + (val("f-name") || "-"),
+      "Name: " + (val("f-name") || (window.__offer && window.__offer.guestName) || "-"),
       "Check-in: " + (val("f-in") || "-"),
       "Check-out: " + (val("f-out") || "-"),
       "Guests: " + (val("f-guests") || "-"),
@@ -589,16 +595,19 @@ footer a:hover{color:var(--gold-soft)}
     ];
     var note = val("f-note");
     if (note) lines.push("Note: " + note);
+    if (window.__offer) lines.push("Offer link: " + window.__offer.slug);
     window.open("https://wa.me/" + PHONE + "?text=" + encodeURIComponent(lines.join("\n")), "_blank", "noopener");
   });
 
   /* lightbox */
-  var imgs = [].slice.call(document.querySelectorAll("#grid img"));
+  function list(){ return [].slice.call(document.querySelectorAll("#grid img")); }
   var lb = document.getElementById("lb");
   var lbImg = document.getElementById("lb-img");
   var idx = 0, lastFocus = null;
 
   function show(i){
+    var imgs = list();
+    if (!imgs.length) return;
     idx = (i + imgs.length) % imgs.length;
     lbImg.src = imgs[idx].src;
     lbImg.alt = imgs[idx].alt;
@@ -614,7 +623,12 @@ footer a:hover{color:var(--gold-soft)}
     document.body.style.overflow = "";
     if (lastFocus) lastFocus.focus();
   }
-  imgs.forEach(function(img, i){ img.parentNode.addEventListener("click", function(){ open(i); }); });
+  document.getElementById("grid").addEventListener("click", function(e){
+    var btn = e.target.closest("button");
+    if (!btn) return;
+    var i = [].indexOf.call(document.querySelectorAll("#grid button"), btn);
+    if (i > -1) open(i);
+  });
   document.getElementById("lb-close").addEventListener("click", close);
   document.getElementById("lb-prev").addEventListener("click", function(){ show(idx - 1); });
   document.getElementById("lb-next").addEventListener("click", function(){ show(idx + 1); });
@@ -627,5 +641,6 @@ footer a:hover{color:var(--gold-soft)}
   });
 })();
 </script>
+<script src="/site.js" defer></script>
 </body>
 </html>

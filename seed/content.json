@@ -1,0 +1,120 @@
+{
+  "prices": {
+    "one": 2499,
+    "three": 10500,
+    "whole": 13000
+  },
+  "images": {
+    "hero": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193980/hillview1.png",
+    "stayA": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193835/Golden-Hour_Garden_Cabin_Retreat.png",
+    "stayB": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193932/evening1.png",
+    "roomOne": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193959/room1.png",
+    "roomThree": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193977/03.png",
+    "roomWhole": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193976/07.png",
+    "party": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193952/ChatGPT_Image_Sep_30_2026_04_38_53_PM.png"
+  },
+  "gallery": [
+    {
+      "size": "tall",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193853/Golden_Hour_Poolside_Retreat_1.png",
+      "alt": "Pool at golden hour",
+      "id": "g01"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791195950/Cozy_Bamboo_Room_with_White_Bedding.png",
+      "alt": "Bamboo room with white bedding",
+      "id": "g02"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193856/Sunny_Pavilion_Entrance_and_Gravel_Driveway.png",
+      "alt": "Entrance pavilion and driveway",
+      "id": "g03"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193889/Bright_Bamboo_Resort_Pool_Retreat.png",
+      "alt": "Pool deck in the afternoon",
+      "id": "g04"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193859/Modern_Tropical_Bamboo_Studio_Interior_1.png",
+      "alt": "Bamboo studio cottage interior",
+      "id": "g05"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193906/realstic.png",
+      "alt": "Cottage exterior",
+      "id": "g06"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193976/day4.png",
+      "alt": "Grounds in the daytime",
+      "id": "g07"
+    },
+    {
+      "size": "wide",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193977/night3_-_Copy.png",
+      "alt": "The resort lit up at night",
+      "id": "g08"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193895/Rustic_Bamboo_Hotel_Room.png",
+      "alt": "Bamboo guest room",
+      "id": "g09"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193895/Bamboo_Garden_Courtyard_at_Night.png",
+      "alt": "Garden courtyard at night",
+      "id": "g10"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193843/Sunlit_Poolside_with_Flamingo_Float.png",
+      "alt": "Sunlit pool with a float",
+      "id": "g11"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193899/profwarm.png",
+      "alt": "Warm evening light on the cottages",
+      "id": "g12"
+    },
+    {
+      "size": "wide",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791195951/Golden_Hour_Poolside_Retreat.png",
+      "alt": "Poolside deck at golden hour",
+      "id": "g13"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193891/Rustic_Bamboo_Lodge_Bedroom_Interior.png",
+      "alt": "Bamboo lodge bedroom",
+      "id": "g14"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193970/04.png",
+      "alt": "Cottage verandah",
+      "id": "g15"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193858/Nighttime_Resort_Pool_Retreat_-_Copy.png",
+      "alt": "Pool at night",
+      "id": "g16"
+    },
+    {
+      "size": "",
+      "src": "https://res.cloudinary.com/nln7zmmg/image/upload/v1791193900/evening6.png",
+      "alt": "Lawn and seating in the evening",
+      "id": "g17"
+    }
+  ]
+}
